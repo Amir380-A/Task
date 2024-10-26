@@ -14,6 +14,7 @@ A RESTful API for managing organizations and users, including user roles within 
 - **MongoDB**: NoSQL database for storing user and organization data.
 - **Mongoose**: ODM library for MongoDB and Node.js.
 - **JWT**: For secure authentication and authorization.
+- **Redis**: For Token revocation.
 - **Postman**: For API testing.
 
 ## Getting Started
@@ -21,7 +22,8 @@ A RESTful API for managing organizations and users, including user roles within 
 ### Prerequisites
 
 - **Node.js**: Version 14 or higher
-- **MongoDB**: Local installation 
+- **MongoDB**: Local installation or thorugh Docker Image
+- **Redis**: as a Docker Image
 
 ### Installation
 
