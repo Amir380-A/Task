@@ -71,6 +71,7 @@ export const signin: any = async (req: Request, res: Response) => {
             message: 'Signin successful',
             access_token: accessToken,
             refresh_token: refreshToken,
+            userId: user._id.toString() // Add user ID here
         });
         
     } catch (error) {
