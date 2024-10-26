@@ -1,0 +1,5 @@
+# .dockerignore
+
+node_modules
+dist
+.env # Optional: If you don't want to include .env in your image (recommended)

@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mongo
+      - redis
+    environment:
+       - PORT=8080
+       - MONGO_URI=${MONGO_URI}
+       - REDIS_HOST=${REDIS_HOST}
+       - REDIS_PORT=${REDIS_PORT}
+       - REDIS_URL=${REDIS_URL}
+       - JWT_SECRET=${JWT_SECRET}
+       - REFRESH_TOKEN_SECRET=${REFRESH_TOKEN_SECRET}
+       - ACCESS_TOKEN_SECRET=${ACCESS_TOKEN_SECRET}
+
+  mongo:
+    image: mongo:latest
+    restart: always
+    volumes:
+      - mongo_data:/data/db
+    ports:
+      - "27017:27017"
+
+  redis:
+    image: redis:alpine
+    restart: always
+    ports:
+      - "6379:6379"
+
+volumes:
+  mongo_data:
+
