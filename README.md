@@ -37,8 +37,10 @@ A RESTful API for managing organizations and users, including user roles within 
 ```bash
 cd Task
 npm install
+npm run build      
+node dist/index.js 
 ```
-### Navigate into the project directo:
+### Navigate into the project directory:
 #### install Docker and run the services specified in docker-compose file and make sure to make your own secret keys and configs in a .env and .dockerignore files and export them to the docker-compose file to run the app  
 ```bash
 docker-compose up
