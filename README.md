@@ -39,7 +39,7 @@ cd Task
 npm install
 ```
 ### Navigate into the project directo:
-#### install Docker and run the services specified in docker-compose file and make sure to make your own secret keys and configs in a .ENV file and 
+#### install Docker and run the services specified in docker-compose file and make sure to make your own secret keys and configs in a .env and .dockerignore files and export them to the docker-compose file to run the app  
 ```bash
 docker-compose up
 ```
