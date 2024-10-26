@@ -28,6 +28,7 @@ A RESTful API for managing organizations and users, including user roles within 
 1. Clone the repository:
    ```bash
    git clone https://github.com/Amir380-A/Task
+
 ## Installation
 
 ### Navigate into the project directory:
@@ -41,5 +42,6 @@ npm install
 docker-compose up
 ```
 to fireup both redis and mongodb and connect your app with them.
-
+## Schema 
+![Alt Text](img/1.jpg)
 
